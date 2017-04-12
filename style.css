@@ -1,0 +1,107 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background: #242129;
+    font-family: 'Press Start 2P';
+}
+.main {
+    position: relative;
+    width: 960px;
+    margin: 0 auto;
+}
+
+.wrapper {
+    position: relative;
+    width: 960px;
+    height: 600px;
+    border:solid 1px darkviolet;
+}
+
+h1 {
+    position: absolute;
+    top: 150px;
+    left: 20%;
+    color: #fafafa;
+}
+
+#start{
+    display: none;
+    width : 200px;
+    position: absolute;
+    top: 430px;
+    left: 40%;
+}
+
+.wrapper2 {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0;
+}
+
+.wrapper3 {
+    position: absolute;
+    top: 1px;
+    left: 1px;
+    height: 600px;
+    width: 960px;
+    background-image: url('./img/loading-space.jpg');
+    background-size: cover;
+}
+
+.wrapper4 {
+    position: absolute;
+    display: none;
+    top: 1px;
+    left: 1px;
+    height: 600px;
+    width: 960px;
+    background-image: url('./img/sunset.jpg');
+    background-size: cover;
+}
+
+.loading {
+    position: absolute;
+    top: 255px;
+    left: 44%;
+    color: #fafafa;
+    font-size: 30px;
+    cursor: default;
+}
+button {
+    background: darkviolet;
+    font-family: 'Press Start 2P';
+    border: 2px solid darkcyan;
+    width: 100px;
+    height: 50px;
+}
+button:hover {
+    background: lightcoral;
+    cursor: pointer;
+}
+
+
+.game-over {
+    position: absolute;
+    top: 200px;
+    left: 32%;
+    z-index: 10;
+    color: darkviolet;
+    font-size: 40px;
+    cursor: default;
+    display: none;
+}
+
+.score {
+    color: darkviolet;
+    cursor: default;
+}
+
+p {
+    font-size: 15px;
+    color: #fafafa;
+    text-align: center;
+    line-height: 30px;
+}
